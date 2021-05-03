@@ -13,29 +13,29 @@
     <h2>Vue.js</h2>
 
     <div id="app">
-        <ul>
-            <li v-for="x in todos">
-                {{ x.text }}
-            </li>
-        </ul>
+      <ul>
+        <li v-for="x in todos">
+          {{ x.text }}
+        </li>
+      </ul>
     </div>
-
+    
     <script>
-        myObject = new Vue({
-            el: '#app',
-            data: {
-                todos: [{
-                        text: 'Learn JavaScript'
-                    },
-                    {
-                        text: 'Learn Vue.js'
-                    },
-                    {
-                        text: 'Build Something Awesome'
-                    }
-                ]
-            }
-        })
+    myObject = new Vue({
+      el: '#app',
+      data: {
+        todos: [
+          { text: 'Learn JavaScript' },
+          { text: 'Learn Vue.js' },
+          { text: 'Build Something Awesome' },
+          { text: '1' },
+          { text: '2' },
+          { text: '3' },
+          { text: '4' }
+          
+        ]
+      }
+    })
     </script>
 </body>
 
